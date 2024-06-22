@@ -44,8 +44,8 @@ img {
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-light);
+	text-decoration: none;
+	color: var(--color-light);
 }
 
 .icon-container {
@@ -125,30 +125,29 @@ a {
 	display: grid;
 	grid-template-columns: 1fr;
 	height: 100vh;
-    width: 100%;
-    flex-grow: 1;
-    overflow: auto;
+	width: 100%;
+	flex-grow: 1;
+	overflow: auto;
 	align-items: flex-start;
 }
 
 @media screen and (min-width: 992px) {
-    .layout{
-        grid-template-columns: minmax(300px, 1fr) 4fr;
-        grid-template-areas: 'sidebar content';
-    }
+	.layout {
+		grid-template-columns: minmax(300px, 1fr) 4fr;
+		grid-template-areas: 'sidebar content';
+	}
 }
 
 .sidebar-visible {
 	grid-area: sidebar;
 }
 
-
 /* MAIN */
 
 .main {
-    -ms-overflow-style: none; /* IE and Edge */
+	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
-    padding: 1em;
+	padding: 1em;
 	overflow-y: scroll;
 }
 
@@ -166,35 +165,36 @@ a {
     max-height: 100%;
 } */
 
-.card-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    gap: 1em;
+.card-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+	gap: 1em;
 }
 
-.card{
-    background-color: var(--color-background-2);
-    padding: 0.5em;
-    border-radius: 0.5em;
+.card {
+	background-color: var(--color-background-2);
+	padding: 0.5em;
+	border-radius: 0.5em;
 }
 
-.card-img-top{
-    border-radius: 0.5em;
+.card-img-top {
+	border-radius: 0.5em;
+	aspect-ratio: 3/2;
 }
 
-.card-title{
-    font-weight: 600;
+.card-title {
+	font-weight: 600;
 }
 
-.btn-card{
-    background-color: var(--color-background-3);
-    color: #878787;
-    padding: 0 0.5em;
+.btn-card {
+	background-color: var(--color-background-3);
+	color: #878787;
+	padding: 0 0.5em;
 }
 
-.btn-card:hover{
-    background-color: var(--color-background-3);
-    opacity: 0.7;
-    color: #878787;
+.btn-card:hover {
+	background-color: var(--color-background-3);
+	opacity: 0.7;
+	color: #878787;
 }
